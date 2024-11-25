@@ -38,7 +38,6 @@ app.listen(port, () => {
 });
 
 const statusMessages = ["暇だ", "ラビミだよ"];
-const client = new Client({
   const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
