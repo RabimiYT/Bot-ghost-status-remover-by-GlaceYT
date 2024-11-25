@@ -38,13 +38,6 @@ app.listen(port, () => {
 });
 
 const statusMessages = ["暇だ", "ラビミだよ"];
-  const client = new Client({
-  intents: [
-    GatewayIntentBits.Guilds,
-    // .. more intents as needed
-  ],
-  ws: { properties: { browser: 'Discord iOS' } },
-});
 const statusTypes = [ 'dnd', 'idle'];
 let currentStatusIndex = 0;
 let currentTypeIndex = 0;
