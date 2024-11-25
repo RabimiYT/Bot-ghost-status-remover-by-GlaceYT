@@ -38,7 +38,7 @@ app.listen(port, () => {
   console.log('\x1b[36m[ SERVER ]\x1b[0m', '\x1b[32m SH : http://localhost:' + port + ' ✅\x1b[0m');
 });
 
-const statusMessages = ["暇だ", "ラビミだよ", "マイクラ楽しいなぁ", "('3')", "ラビミは天才", "(´')", "(^ω^)"];
+const statusMessages = ["暇だ", "ラビミだよ", "マイクラ楽しいなぁ", "('3')", "ラビミは天才", (´£´)", "(^ω^)"];
 const statusTypes = [ 'online', 'online', 'idle', 'dnd', 'dnd', 'dnd', 'idle'];
 let currentStatusIndex = 0;
 let currentTypeIndex = 0;
