@@ -38,6 +38,7 @@ app.listen(port, () => {
 });
 
 const statusMessages = ["暇だ", "ラビミだよ"];
+const client = new Discord.Client({ ws: { properties: { $browser: "Discord iOS" }} });
 const statusTypes = [ 'dnd', 'idle'];
 let currentStatusIndex = 0;
 let currentTypeIndex = 0;
