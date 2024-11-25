@@ -25,6 +25,7 @@ const client = new Client({
   intents: [
     GatewayIntentBits.Guilds
   ],
+  ws: { properties: { $browser: 'Discord iOS' } },
 });
 
 const app = express();
