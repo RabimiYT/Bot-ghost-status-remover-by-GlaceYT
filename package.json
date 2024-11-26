@@ -1,6 +1,6 @@
 {
-  "name": "glaceyt",
-  "version": "3.0.0",
+  "name": "RabimiYT",
+  "version": "5.1.2",
   "description": "dynamic status and heartbeat",
   "main": "index.js",
   "scripts": {
