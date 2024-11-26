@@ -61,6 +61,22 @@ function updateStatus() {
     activities: [{ name: currentStatus, type: ActivityType.Custom }],
     status: currentType,
   });
+  static void UpdatePresence()
+{
+    DiscordRichPresence discordPresence;
+    memset(&discordPresence, 0, sizeof(discordPresence));
+    discordPresence.state = "マイクラをプレイ中";
+    discordPresence.details = "製作者: ラビミ";
+    discordPresence.largeImageKey = "icon";
+    discordPresence.largeImageText = "アイコン";
+    discordPresence.smallImageKey = "minecraft2";
+    discordPresence.smallImageText = "Minecraft | Sword Slime";
+    discordPresence.partyId = "no";
+    discordPresence.partySize = 1;
+    discordPresence.partyMax = 12;
+    discordPresence.joinSecret = "minecraft://?addExternalServer= §lbSword §l§aSlime|swordslime.xgames.jp:25565";
+    Discord_UpdatePresence(&discordPresence);
+}
   client.user.setActivity();
   console.log('\x1b[33m[ STATUS ]\x1b[0m', `Updated status to: ${currentStatus} (${currentType})`);
   currentStatusIndex = (currentStatusIndex + 1) % statusMessages.length;
