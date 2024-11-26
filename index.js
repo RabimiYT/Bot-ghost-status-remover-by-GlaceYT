@@ -49,31 +49,11 @@ async function login() {
     console.log('\x1b[36m[ LOGIN ]\x1b[0m', `\x1b[32mLogged in as: ${client.user.tag} ✅\x1b[0m`);
     console.log('\x1b[36m[ INFO ]\x1b[0m', `\x1b[35mBot ID: ${client.user.id} \x1b[0m`);
     console.log('\x1b[36m[ INFO ]\x1b[0m', `\x1b[34mConnected to ${client.guilds.cache.size} server(s) \x1b[0m`);
-    setInterval(() => {
-      let random = Math.floor(Math.random() * status.length);
-      client.user.setActivity(status[random]);
-    },10000);
   } catch (error) {
     console.error('\x1b[31m[ ERROR ]\x1b[0m', 'Failed to log in:', error);
     process.exit(1);
   }
 }
-
-let status = [
-  {
-    name: "ラビミBOT",
-    type: ActivityType.Playing,
-  }
-  {
-    name: "ラビミだよぉ",
-    type: ActivityType.Playing,
-  }
-  {
-    name: "暇だなぁ",
-    type: ActivityType.Playing,
-  }
-]
-
 function updateStatus() {
   const currentStatus = statusMessages[currentStatusIndex];
   const currentType = statusTypes[currentTypeIndex];
